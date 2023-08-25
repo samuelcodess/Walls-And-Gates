@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    background-color: #fafafa;
+}
+header {
+    background: transparent;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    padding: 2.2rem 6rem;
+    justify-content: space-between;
+    
+   
+}
+header ::after {
+    background-color: #000;
+}
+.logo img {
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: -350px;
+    height: auto;
+}
+.navbar a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+    
+    
+}
+.header .toggle-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    color: white;
+}
+.dropdown-menu {
+    display: none;
+    background: orange;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+.dropdown-menu.open {
+    height: 260px;
+
+}
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+}
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    transition: .3s;
+}
+.page .area {
+    background-image: url('./about.jpg');
+    
+
+}
+.area {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: -164px;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+
+}
+.area::before {
+    position: absolute;
+    opacity: 0.4;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+.page-title .title {
+     position: relative;
+     margin-top: 205px;
+     color: white;
+     font-size: 72px;
+     line-height: 70px;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     z-index: 3;
+     padding: 200px;
+
+}
+
+.port {
+    
+    display: block;
+    margin-top: 50px;
+    padding-top: 450px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+.port .container {
+    width: 100%;
+    padding: 0rem 6rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .sectionone {
+    justify-content: center;
+}
+.portfolio {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    position: relative;
+}
+.header .title {
+    font-size: 75px;
+    padding-top: 18px;
+    text-align: center;
+    color: black;
+    margin: 0px 0 15px;
+    font-weight: 700;
+    
+    
+}
+.port-list {
+    color: #33415C;
+    font-size: 17px;
+    padding: 26px 0 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
+}
+.port-list ul {
+    display: inline-block;
+    list-style-type: none;
+    padding-top: 25px;
+    padding: 50;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.port-list ul li {
+    display: inline-block;
+    line-height: 55px;
+    
+    color: black;
+    box-shadow: 25px;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0 28px;
+    letter-spacing: 1px;
+    height: 125px;
+    margin: 0 5px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+.port-list ul li .active {
+    background: lightblue;
+    color: white;
+}
+.port1 {
+    display: inline-flex;
+    padding: 40px;
+    padding-left: 130px;
+    width: 20%;
+}
+.project {
+    position: relative;
+    border-radius: 10px;
+}
+.port-img .img {
+    border-radius: 50px;
+}
+.portfolio-content h5 {
+    font-size: 30px;
+}
+.portfolio-content span {
+    color: #33415C;
+    font-size: 19px;
+}
+.footer-section {
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    
+}
+.footer-logo img {
+    padding-top: 50px;
+    padding-left: 160px;
+}
+
+.links{
+    text-align: center;
+    padding: 70px;
+    padding-left: 70px;
+    
+}
+.links h4 {
+        color: white;
+    font-size: 60px;
+}
+.links li {
+    
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 50px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+}
+.foot {
+    text-align: center;
+    padding: 70px;
+    padding-left: 50px;
+    line-height: 2.5;
+}
+.foot h3 {
+    color: white;
+    font-size: 60px;
+}
+.foot ul {
+    
+    
+    font-size: 30px;
+    text-decoration: none;
+}
+.foot li {
+    color: white;
+    padding: 0px;
+    list-style-type: none;
+}
+.footer-copyright {
+    color: white;
+    background: #000;
+    font-size: 30px;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
